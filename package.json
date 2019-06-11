@@ -11,5 +11,12 @@
   "license": "ISC",
   "devDependencies": {
     "husky": "^2.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo pre-commit - $HUSKY_GIT_PARAMS",
+      "commit-msg": "echo commit-msg - $HUSKY_GIT_PARAMS",
+      "post-commit": "echo post-commit - $HUSKY_GIT_PARAMS"
+    }
   }
 }
